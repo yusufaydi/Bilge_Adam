@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 1540px) {
+  .announcements-h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-left: 400px;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1540px) {
+  .announcements-h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-left: 600px;
+  }
+}
+
+html {
+  font-family: 'Open Sans', 'sans-seif';
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 2rem 2rem;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  padding-left: 45px;
+  padding-right: 45px;
+  background: #32a8ec;
+}
+
+.btn-second {
+  padding-right: 40px;
+  padding-left: 40px;
+  background: #2bac27;
+}
+
+.btn-third {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f74f73;
+}
+
+/*  Navbar Section */
+
+#navbar {
+  color: #fff;
+  background-color: rgb(13, 80, 139);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0, 0.75rem;
+  height: 70px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+li.text-round {
+  background-color: rgb(26, 26, 109);
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+  border: solid 4px rgb(26, 26, 109);
+}
+
+#navbar ul li a {
+  padding: 0.5rem;
+  margin: 0 12px;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* these codes are used but didnt work exactly how i want them to work.
+#home img {
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+*/
+
+#home .card {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#home .card .card__image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+#home .home-container {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#home .home-container .name {
+  position: relative;
+}
+
+#home .name h2 {
+  color: #fff;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#home .name a {
+  margin-left: 1rem;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+#home .name .autocomplete input[type='text'] {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 700px;
+  padding: 6px;
+  /*margin: 8px 0px 300px 600px;*/
+  border: 4px solid #fff;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+.autocomplete-items {
+  position: relative;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1540px) {
+  #home .home-container .name .container {
+    position: absolute;
+    top: 360px;
+    left: 300px;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1540px) {
+  #home .home-container .name .container {
+    position: absolute;
+    top: 280px;
+    left: 500px;
+  }
+}
+
+/*  announcements Section   */
+
+#announcements {
+  color: black;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+#announcements .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#announcements .items .item {
+  width: 33%;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+#announcements .items .item p {
+  margin-top: 1rem;
+}
+
+#announcements .items .item .list-container {
+  margin-left: 20px;
+}
+
+#announcements .items .item .ul-list {
+  list-style-type: decimal;
+}
+
+#announcements .items .item ul li {
+  list-style-type: circle;
+}
+
+#announcements .items .item ol li {
+  list-style-type: circle;
+}
+
+.first-p {
+  opacity: 0.5;
+  font-size: 16px;
+  font-style: italic;
+}
+
+#back-grnd {
+  filter: brightness(50%);
+}
